@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.50s;
+  list-style-type: none;
+  font-family: 'Kanit';
+}
+::selection{
+  color: #fff;
+  background: dodgerblue;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #000010;
+}
+span{
+  color: dodgerblue;
+}
+
+/*== HEADER ==*/
+header{
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  background: #000019;
+  border-bottom: 1px #000020 solid;
+  box-shadow: inset 1px 1px 10px #000020;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  display: flex;
+  backdrop-filter: blur(5px);
+  z-index: 99999;
+}
+header img {
+  border-radius: 2px;
+  width: 50px;
+  border: 2px #160035 solid;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+aside{
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  background: linear-gradient(to right,#000015, #000322);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999999999999;
+}
+aside h1{
+  font-size: 30px;
+}
+aside li{
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.line{
+  border-radius: 1px;
+  border-top: 3px dodgerblue solid;
+  box-shadow: 1px 1px 7px #6600FF1F;
+  width: 30px;
+}
+.line2{
+  margin-top: 7px;
+  border-radius: 1px;
+  border-top: 3px dodgerblue solid;
+  box-shadow: 1px 1px 7px #6600FF1F;
+  width: 20px;
+  margin-left: 10px;
+}
+.line3{
+  margin-top: 7px;
+  border-radius: 1px;
+  border-top: 3px dodgerblue solid;
+  box-shadow: 1px 1px 7px #6600FF1F;
+  width: 30px;
+}
+#show{
+  padding: 11px;
+  background: #00002245;
+  height: 19px;
+  box-shadow: inset 1px 1px 7px #0000405E;
+  border-radius: 10px;
+  z-index: 9999999 !important;
+  margin-right: 30px;
+}
+/*== HEADER END ==*/
+
+
+
+/*=================*/
+
+
+
+/*== HERO SECTION ==*/
+.landing{
+  justify-content: space-around;
+  padding: 20px;
+  height: 100vh;
+  background: linear-gradient(to left, #000015, #000020);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.landing h1{
+  font-size: 38px;
+}
+.landing p{
+  color: #C8C8C8;
+}
+.landing button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  font-size: 14px;
+  border: 1px #EEEEEE solid;
+  border-radius: 100px;
+  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  width: 165px;
+  margin-top: 20px;
+}
+.landing button svg{
+  height: 42px;
+  fill: #EEEEEE !important;
+  position: absolute;
+  right: -1px;
+  border-radius: 1000px;
+}
+.landing button:hover{
+  animation: 0.50s btn infinite;
+}
+@keyframes btn{
+  50%{
+    margin-right: 5px;
+  }
+  50%{
+    margin-left: 5px;
+  }
+}
+.lg-img{
+  border: 2px solid #008BFFB8;
+  width: 300px;
+  height: 300px;
+  border-radius: 2px;
+}
+.lg-img img{
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px #DCDCDC2B solid;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.landing div{
+  margin-top: 30px;
+}
+.lg-img img:hover{
+  margin-left: 0;
+  margin-top: 0;
+  border: none;
+}
+/*== HERO SECTION END ==*/
+
+/*======================*/
+
+
+/*== ABOUT SECTION ==*/
+
+.title{
+  position: absolute;
+  font-size: 90px;
+  width: 100%;
+  margin-top: -37px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #FFFFFF9E;
+  opacity: 0.1;
+}
+.h1{
+  font-size: 50px
+}
+.about{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about li, .about p{
+  opacity: 0.80;
+}
+.about p{
+  width: 300px;
+}
+.about ul, .about p{
+  margin-top: 20px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  bottom: 0;
+  left: 50%;
+}
+.icon{
+  width: 100px;
+  border: 2px solid #002;
+  background: #002;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.icon h4{
+  color: #AFAFAF;
+}
+.icon svg{
+  fill: #0079FF;
+  height: 25px;
+}
+/*== ABOUT SECTION END ==*/
+
+/*=======================*/
+
+/*== SERVICES SECTION ==*/
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.s-card{
+  width: 270px;
+  height: 370px;
+  background: linear-gradient(to right ,#01001F, #090022);
+  margin-top: 20px;
+  display: grid;
+  border-radius: 10px;
+  place-items: center;
+  padding: 15px;
+  position: relative;
+}
+.s-card::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #0050FF;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.s-card:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom bottom;
+}
+/*== SERVICES SECTION END ==*/
+
+/*== SKILLS SECTION ==*/
+.skills-cont{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.skill{
+  width: 170px;
+  height: 170px;
+  border-radius: 200px;
+  margin-top: 10px;
+  background: #6400FF17;
+  border: 1px #6400FF solid;
+  display: grid;
+  padding: 10px;
+  place-items: center;
+}
+.skill svg{
+  height: 80px;
+  fill: #D6D6D6;
+}
+.skill h2{
+  color: #D6D6D6;
+}
+/*== SKILLS SECTION END ==*/
+
+/*== PROJECT SECTION ==*/
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.projects img{
+  width: 300px;
+  margin-top: 20px;
+}
+.card{
+  height: 200px;
+  border-radius: 3px;
+  padding: 10px;
+  width:300px;
+  margin-top: 30px;
+  word-wrap: word-break;
+  overflow-y: scroll;
+  margin-top: 50px;
+  box-shadow: 1px 1px 7px #00091661;
+  border-radius: 10px;
+  background: linear-gradient(to right, #02001C, #000923);
+  position: relative;
+}
+.card img{
+  border-radius: 5px;
+  max-height: 100px;
+  max-width: 200px;
+}
+.card p{
+  margin-top: 5px;
+}
+.icons2{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px #004 solid;
+}
+.icons2 .html{
+  fill: orangered;
+}
+.icons2 .css{
+  fill: dodgerblue;
+}
+.icons2 svg{
+  height: 23px; 
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 7px #000F37;
+  padding: 7px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+.icons2 .js{
+  fill: orange;
+}
+
+.icon2{
+  padding: 10px;
+  border-radius: 5px;
+  background: dodgerblue;
+}
+/*== PROJECTS SECTION END ==*/
+
+/*== Contact Form ==*/
+form{
+  display: grid;
+  place-items: center;
+}
+form input{
+  padding: 8px;
+  background: #002;
+  border: none;
+  border-bottom: 2px solid #007FFF;
+  border-radius: 2px;
+  width: 290px;
+  margin-top: 10px;
+  outline: none;
+  height: 27px;
+}
+form input:hover{
+  transform: scaleY(1.1);
+}
+form textarea{
+  padding: 8px;
+  background: #002;
+  border: none;
+  border-bottom: 2px solid #007FFF;
+  border-radius: 2px;
+  width: 290px;
+  height: 80px;
+  margin-top: 10px;
+  outline: none;
+}
+form button{
+  width: 150px;
+  padding: 5px;
+  background: linear-gradient(to right, #007FFF, #0045FF);
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+form button:hover{
+  background: linear-gradient(to left, #007FFF, #0045FF);
+}
+/*== Contact Form End ==*/
+
+/*== Footer ==*/
+footer{
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(to left, #000015, #000020);
+  margin-top: 30px;
+}
+footer h4{
+  color: #fff;
+}
+footer a{
+  color: #50a2f5 !important;
+  text-decoration: underline;
+}
+.footer-svg{
+  background: #003;
+  fill: #DADADA;
+  padding: 5px;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+.footer-svg svg{
+  width: 20px;
+}
+/*== Footer End ==*/
+
+/*== Arrow Btn ==*/
+#arrow-up {
+  display: none;
+  position: absolute;
+  width: 60px;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99999999;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 150px;
+  transform: rotate(450deg);
+  height: 60px;
+  background: linear-gradient(to right, #0B8AFF, #0028FF);
+  border: none;
+  place-items: center;
+}
+#arrow-up:hover{
+  box-shadow: 1px 1px 30px #0050FF78;
+}
+#arrow-up svg{
+  height: 27px;
+  fill: #fff;
+  transform: rotate(-90deg)
+}
+/*== Arrow Btn End ==*/
